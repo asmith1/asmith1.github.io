@@ -18,10 +18,9 @@ body {
 h1 {
 	color: #314e9d;
 	font-size: 30px;
-	font-family: Charlotte;
+	font-family: "lucida calligraphy", arial, sans-serif;
 }
 
 h2 {
 	font-size: 20px;
-	line-height: 10px;
 }
