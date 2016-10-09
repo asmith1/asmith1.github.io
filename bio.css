@@ -2,7 +2,10 @@ p {
 	font-size: 20px;
 	text-align: left;
 	line-height: 30px;
+	text-indent: 0px;
+}
+
+body {
 	padding-left: 15%;
 	padding-right: 15%;
-	text-indent: 0px;
 }
