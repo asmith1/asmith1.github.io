@@ -1,6 +1,7 @@
 p {
 	word-spacing: 50px;
 	font-weight: bold;
+	text-indent: none;
 }
 
 body {
