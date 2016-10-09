@@ -11,10 +11,15 @@ body {
 	font-family: Verdana, Geneva, sans-serif;
 }
 
+p {
+	padding-left: 15%;
+}
+
 h1 {
 	color: #314e9d;
 	font-size: 60px;
-	font-family: "Brush Script MT", cursive;;
+	font-family: "Brush Script MT", cursive;
+	text-align: center;
 }
 
 h2 {
