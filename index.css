@@ -1,9 +1,5 @@
-body {
+p {
 	word-spacing: 50px;
 	text-decoration: none;
 	font-weight: bold;
-}
-
-h1 {
-	word-spacing: 0.25em;
 }

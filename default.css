@@ -1,4 +1,4 @@
-html {
+body {
 	background-color: #C5D0ED;
 	padding-right: 10%;
 	padding-left: 10%;
@@ -6,9 +6,6 @@ html {
 	padding-bottom: 10%;
 	border-width: 4px;
 	border-color: #314e9d;
-}
-
-body {
 	text-align: center;
 	font-size: 14px;
 	font-family: Verdana, Geneva, sans-serif;
@@ -17,8 +14,8 @@ body {
 
 h1 {
 	color: #314e9d;
-	font-size: 30px;
-	font-family: "lucida calligraphy", arial, sans-serif;
+	font-size: 40px;
+	font-family: "Berkshire Swash", Helvetica, sans-serif;
 }
 
 h2 {
