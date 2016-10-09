@@ -4,12 +4,14 @@ body {
 	text-align: center;
 	font-size: 14px;
 	font-family: Verdana;
-	line-height: 3px;
+	line-height: 8px;
+	border-color: #314e9d;
 }
 
 h1 {
 	color: #314e9d;
 	font-size: 30px;
+	text-decoration: blink;
 }
 
 h2 {
