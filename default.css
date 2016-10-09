@@ -9,15 +9,20 @@ body {
 	text-align: center;
 	font-size: 14px;
 	font-family: Verdana, Geneva, sans-serif;
-	line-height: 14px;
 }
 
 h1 {
 	color: #314e9d;
 	font-size: 40px;
-	font-family: "Berkshire Swash", Helvetica, sans-serif;
+	font-family: "Brush Script MT", cursive;;
 }
 
 h2 {
 	font-size: 20px;
+}
+
+ul {
+	text-align: left;
+	padding-left: 20%;
+	padding-right: 20%;
 }
