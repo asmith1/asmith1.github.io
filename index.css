@@ -1,7 +1,18 @@
-p {
-	word-spacing: 50px;
-	font-weight: bold;
-	text-indent: 0px;
+#image {
+    border-radius: 10px;
+    background: url(profpic.JPG);
+    background-position: center;
+    background-size: contain;
+    /*background-repeat: no-repeat;*/
+    padding: 20px; 
+    width: 350px;
+    height: 350px; 
+    margin: 0 auto;
+}
+
+#buttons {
+    word-spacing: 50px;
+    padding-top: 10px;
 }
 
 body {
