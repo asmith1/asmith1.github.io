@@ -53,12 +53,9 @@ body {
 	background-position-y: -400px;
 	background-repeat: no-repeat;
 	color: #f26363;
-	text-shadow-color: white;
+
     text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
+     1px 1px 0 #FFFFFF; /* right and bottom shadow */
 
 }
 
