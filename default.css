@@ -6,7 +6,7 @@ body {
 	/*url("backgroundpic.jpg") 0 0;
 	content: "";
 	opacity: 0.5;*/
-  	background: url(backgroundpic.jpg);
+  	background: url(fadedbackground.jpg);
   	
   	top: 0;
   	left: 0;
