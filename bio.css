@@ -4,12 +4,19 @@ p {
 	line-height: 30px;
 	text-indent: 0px;
     text-shadow: 0px 0px;
-    color: #d95959;
+    color: #ff0000;
     font-weight: 600;
     font-style: oblique;
+    text-shadow:
+     1px 1px 0 #FFFFFF; 
 }
 
 body {
+    padding-top: 8%;
 	padding-left: 15%;
 	padding-right: 15%;
+}
+
+#back-button {
+    text-align: center;
 }
