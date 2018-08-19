@@ -1,22 +1,19 @@
 p {
-	font-size: 20px;
+	font-size: 34px;
 	text-align: left;
-	line-height: 30px;
 	text-indent: 0px;
-    text-shadow: 0px 0px;
-    color: #e6005c;
-    font-weight: 600;
-    font-style: oblique;
-    text-shadow:
-     1px 1px 0 #FFFFFF; 
+  font-weight: 600;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 body {
-    padding-top: 8%;
 	padding-left: 15%;
 	padding-right: 15%;
 }
 
 #back-button {
-    text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }

@@ -13,7 +13,6 @@ body {
   text-shadow:
   1px 1px 0 #FFFFFF; /* right and bottom shadow
 */
-
 }
 
 p {
@@ -22,7 +21,7 @@ p {
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 60px;
   font-family: 'Bree Serif', serif;
 	text-align: center;
 	margin-top: auto;
