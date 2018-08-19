@@ -44,11 +44,11 @@ ul {
   background-color: var(--text-color);
 	color: var(--background-color);
   border-radius: 50%;
-	height: 100px;
-	width: 100px;
+	height: 10rem; /* was 100 px */
+	width: 10rem;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 2rem; /* was 16px */
 	margin: 5px;
 }
 
