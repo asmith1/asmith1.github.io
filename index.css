@@ -1,14 +1,6 @@
 #image-container {
   display: flex;
   justify-content: center;
-  /* border-radius: 10px; */
-  /* background: url(profpic.JPG); */
-  /* background-position: center; */
-  /* background-size: contain; */
-  /*background-repeat: no-repeat;*/
-
-  /* align-items: center; */
-  /* margin: 0 auto; */
 }
 
 img {
@@ -19,13 +11,25 @@ img {
   border-radius: 8%;
 }
 
-#buttons {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 10px;
+@media (max-width: 500px) {
+  #buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
+
+@media (min-width: 501px) {
+  #buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+  }
+}
+
 
 body {
 	text-align: center;
