@@ -16,13 +16,14 @@ body {
 }
 
 p {
+	font-family: 'Roboto', serif;
 	opacity: 1;
 	text-indent: 50px;
 }
 
 h1 {
 	font-size: 60px;
-  font-family: 'Bree Serif', serif;
+	font-family: 'Roboto', serif;
 	text-align: center;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -44,11 +45,11 @@ ul {
   background-color: var(--text-color);
 	color: var(--background-color);
   border-radius: 50%;
-	height: 10rem; /* was 100 px */
-	width: 10rem;
+	height: 8rem; /* was 100 px */
+	width: 8rem;
   text-align: center;
   text-decoration: none;
-  font-size: 2rem; /* was 16px */
+  font-size: 1.5rem; /* was 16px */
 	margin: 5px;
 }
 
