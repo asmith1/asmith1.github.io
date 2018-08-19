@@ -1,103 +1,29 @@
+:root {
+	--background-color: #1D0762; /* dark violet */
+	--text-color: #eae6f2; /* white */
+}
+
 body {
-	/*background-color: #C5D0ED;*/
-	background: #ffffff;
-	display: block;
-  	position: relative;
-	/*url("backgroundpic.jpg") 0 0;
-	content: "";
-	opacity: 0.5;*/
-  	background: url(fadedbackground.jpg);
-  	
-  	top: 0;
-  	left: 0;
-  	bottom: 0;
-  	right: 0;
-  	position: absolute;
-  	z-index: -1;
-	
-	background-size: cover;
-	
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#825b00',GradientType=0 ); /* IE6-9 */
-/*
-    position: relative;
-    background-color: #FFFFFF;
-    overflow: hidden;
-
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.6;
-    background-image: url(backgroundpic.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;*/
-
-	padding-right: 20%;
-	padding-left: 20%;
-	padding-top: 2%;
-	padding-bottom: 10%;
-	/*border-width: 4px;
-	border-color: #314e9d;*/
+	background: var(--background-color);
 	text-align: left;
 	font-size: 15px;
-	/*font-family: Verdana, Geneva, sans-serif;*/
-    font-family: 'Bree Serif', serif;
-	/*border-radius: 2px;*/
-	background-position-y: -400px;
-	background-repeat: no-repeat;
-	color: #e6005c;
-
-    text-shadow:
-     1px 1px 0 #FFFFFF; /* right and bottom shadow */
-
-}
-
+  font-family: 'Bree Serif', serif;
+	color: var(--text-color);
 /*
-.my-container {
-    position: relative;
-    background-color: #FFFFFF;
-    overflow: hidden;
+  text-shadow:
+  1px 1px 0 #FFFFFF; /* right and bottom shadow
+*/
+
 }
-/* You could use :after - it doesn't really matter 
-.my-container:after {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.6;
-    background-image: url(backgroundpic.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-}*/
 
 p {
 	opacity: 1;
 	text-indent: 50px;
-
 }
 
 h1 {
-
 	font-size: 50px;
-	/*font-family: "Courgette", cursive;*/
-    font-family: 'Bree Serif', serif;
+  font-family: 'Bree Serif', serif;
 	text-align: center;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -112,33 +38,21 @@ ul {
 	padding-right: 10%;
 }
 
-.strokeme
-{
-    color: white;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;  
-}
-
 .button {
-	text-shadow: none;
-    /*background-color: #ff0000;; /* bright coral */
-    background-color: #e6005c;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  background-color: var(--text-color);
+	color: var(--background-color);
+  border-radius: 50%;
+	height: 100px;
+	width: 100px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 #contactform {
 	padding-left: 30%;
 	padding-right: 30%;
 }
-
-
