@@ -8,7 +8,7 @@ img {
   width: 350px;
   max-width: 100%;
   max-height: 350px;
-  border-radius: 8%;
+  border-radius: 5%;
 }
 
 @media (max-width: 500px) {
@@ -30,6 +30,20 @@ img {
   }
 }
 
+#github-button:hover {
+  background-color: white;
+  content: url(../content/github-logo.svg); /* file loc relative to css file */
+}
+
+#linkedin-button:hover {
+  background-color: white;
+  content: url(../content/linkedin-logo.svg); /* file loc relative to css file */
+}
+
+#resume-button:hover {
+  background-color: white;
+  content: url(../content/cv-logo.svg);
+}
 
 body {
 	text-align: center;

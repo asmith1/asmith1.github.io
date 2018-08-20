@@ -10,10 +10,6 @@ body {
 	font-size: 15px;
   font-family: 'Roboto', serif;
 	color: var(--text-color);
-/*
-  text-shadow:
-  1px 1px 0 #FFFFFF; /* right and bottom shadow
-*/
 }
 
 p {
@@ -54,4 +50,13 @@ ul {
 #contactform {
 	padding-left: 30%;
 	padding-right: 30%;
+}
+
+#footer {
+	color: #cfb7e5;
+	padding-top: 5%;
+}
+
+#footer a:link {
+	color: #cfb7e5;
 }
