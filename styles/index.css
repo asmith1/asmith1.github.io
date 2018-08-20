@@ -42,7 +42,7 @@ img {
 
 #resume-button:hover {
   background-color: white;
-  content: url(../content/resume.svg);
+  content: url(../content/cv-logo.svg);
 }
 
 body {
