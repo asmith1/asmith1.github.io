@@ -4,15 +4,21 @@
 <head>
 	<title> Ashley's Homepage </title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" href="default.css" />
-	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="styles/default.css" />
+	<link rel="stylesheet" href="styles/index.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
   <div class="my-container">
 		<h1> Ashley Smith </h1>
-		<p> <div id = image-container> <img src = "profpic.JPG" alt = "Image of Ashley Smith" /> </div> </p>
+		<p>
+			<div id = image-container>
+				<img srcset = "content/prof-pic-big.jpg 2x, content/prof-pic-small.jpg 1x"
+					src = "content/prof-pic-small.jpg"
+					alt = "Image of Ashley Smith" />
+			</div>
+		</p>
     <div id = "buttons">
 			<a href = "ashley_smith_resume.pdf" target="_blank" class = "button"> Resume </a> <a href = "bio.html" class = "button"> Biography </a>
      	<a href = "https://github.com/asmith1" target="_blank" class = "button"> Github </a> <a href="https://www.linkedin.com/in/ashley-smith-951802126/?trk=nav_responsive_tab_profile_pic" target="_blank" class = "button"> LinkedIn </a>
