@@ -3,12 +3,14 @@
   justify-content: center;
 }
 
-img {
-  padding: 20px;
-  width: 350px;
-  max-width: 100%;
-  max-height: 350px;
-  border-radius: 5%;
+@media (min-width: 501px) {
+  img {
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+    max-height: 350px;
+    border-radius: 5%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -23,9 +25,9 @@ img {
 @media (min-width: 501px) {
   #buttons {
     display: flex;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 10px;
   }
 }
