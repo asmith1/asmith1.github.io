@@ -11,6 +11,13 @@
     max-height: 350px;
     border-radius: 5%;
   }
+  #buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -20,15 +27,14 @@
     justify-content: flex-start;
     align-items: center;
   }
-}
-
-@media (min-width: 501px) {
-  #buttons {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 10px;
+  .button {
+    height: 15rem;
+    width: 15rem;
+  }
+  img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
   }
 }
 
@@ -45,6 +51,11 @@
 #resume-button:hover {
   background-color: white;
   content: url(../content/cv-logo.svg);
+}
+
+#bio-button:hover {
+  background-color: white;
+  content: url(../content/smile.svg);
 }
 
 body {

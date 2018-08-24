@@ -91,18 +91,6 @@ h1 {
 	}
 }
 
-@media (max-width: 500px) {
-	.button {
-		height: 15rem;
-		width: 15rem;
-	}
-	img {
-		height: 15rem;
-		width: 15rem;
-		border-radius: 50%;
-	}
-}
-
 @media (min-width: 701px) {
 	#bio-button {
 		display: none;
