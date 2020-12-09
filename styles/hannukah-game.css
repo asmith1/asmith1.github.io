@@ -1,0 +1,14 @@
+body {
+ background-color: #b987e6;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+}
