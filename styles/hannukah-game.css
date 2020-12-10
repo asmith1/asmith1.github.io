@@ -12,3 +12,7 @@ img {
   display: flex;
   justify-content: center;
 }
+
+#blue-piece, #gray-piece, #green-piece, #purple-piece, #red-piece, #white-piece, #yellow-piece {
+  position: absolute;
+}
