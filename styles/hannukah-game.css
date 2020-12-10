@@ -15,4 +15,34 @@ img {
 
 #blue-piece, #gray-piece, #green-piece, #purple-piece, #red-piece, #white-piece, #yellow-piece {
   position: absolute;
+  height: 3.5%;
+  width: 3.5%;
+}
+
+.game-container {
+  display: flex;
+}
+
+#blue-piece, #gray-piece {
+  padding-top: 10%;
+}
+
+#gray-piece {
+  padding-left: 5%;
+}
+
+#green-piece, #purple-piece {
+  padding-top: 5%;
+}
+
+#purple-piece {
+  padding-left: 5%;
+}
+
+#white-piece {
+  padding-top: 15%;
+}
+
+#yellow-piece {
+  padding-left: 5%;
 }
