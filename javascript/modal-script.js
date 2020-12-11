@@ -2,16 +2,35 @@
 var modal = document.getElementById("card");
 
 // Get the button that opens the modal
-var btn = document.getElementById("draw-card-button");
+var drawCardButton = document.getElementById("draw-card-button");
+
+var showAnswerButton = document.getElementById("show-answer-button");
+
+var cardAnswer = document.getElementById("card-answer");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+var card = {};
+
+
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  var card =  cards[Math.floor(Math.random() * cards.length)];
-  document.getElementById("card-text").innerHTML = card;
+drawCardButton.onclick = function() {
+  card =  cards[Math.floor(Math.random() * cards.length)];
+  document.getElementById("card-text").innerHTML = card.question;
   modal.style.display = "block";
+}
+
+showAnswerButton.onclick = function() {
+  console.log(card);
+  console.log(cardAnswer.innerHTML);
+  if (cardAnswer.innerHTML == "") {
+    cardAnswer.innerHTML = card.answer;
+    showAnswerButton.innerHTML = "Hide answer";
+  } else {
+    cardAnswer.innerHTML = null;
+    showAnswerButton.innerHTML = "Show answer";
+  }
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -27,19 +46,20 @@ window.onclick = function(event) {
 }
 
 var cards = [
-  "Why are dreidels traditional for Chanukah? <br> a) It's fun to spin them  <br> b) Jews played with tops to make the Greek soldiers <br> think they weren't studying Torah<br <br> c) They get you chocolate or money! <br> d) Without them, menorahs would be lonely : ( <br> <br> Answer: b",
-  "What is a dreidel? <br> a) a UFO <br> b) a kind of dog <br> c) something delicious in my grandma's soup <br> d) it's a top that has four Hebrew letters on it <br> <br> Answer: d",
-  "What was the miracle of Chanukah? <br> a) the oil lasted for 8 days instead of 1 <br> b) the sea parted in time for us to cross <br> c) the well followed Miriam everywhere she went <br> d) the bush was burning but was not consumed <br> Answer: a",
-  "Why do we eat fried foods during Chanukah? <br> a) they taste good <br> b) we like foods that are crispy <br> c) fried oreos are the new gelt <br> d) we remember the miracle of the oil lasting for 8 days <br> Answer: d",
-  "Thought Question (All answers are correct) <br> Besides latkes, what fried food you would like to make traditional for at least one night of Chanukah? Why?",
-  "Who was Mattathias? <br> a) the inventor of the first dreidel <br> b) the guy in the Temple who lit the menorah <br> c) the father of Judah the Maccabee <br> d) the person who thought we should light all 8 candles on the first night of Chanukah <br> Answer: c",
-  "How many sons did Mattathias have? <br> a) one <br> b) ten <br> c) none – he only had daughters <br> d) five <br> Answer: d – 5: Yochanan, Shimon, Judah, Eliezer, and Yonatan",
-  "Who was the Syrian Greek king who oppressed the Jewish people and tried to put an end to Judaism? <br> a) King Kong <br> b) Antiochus <br> c) King Tut <br> d) Achashveirosh <br> Answer: b",
-  "What is something Jewish you could do during Chanukah to make the holiday extra fun or special? <br> a) watch a movie about a Jewish person or holiday <br> b) read a Jewish book or comic book <br> c) listen to Jewish music <br> d) all of the above and so much more <br> Answer: d",
-  "What do we call the candle that we use to light the other Chanukah candles? <br> a) we don’t call it anything because it has no ears to hear us <br> b) the lighter <br> c) the Shamash <br> d) the hottie <br> Answer: c",
-  "What rabbi first decided that we should light 1 candle on the first night of Chanukah adding a candle each night until we light 8 on the last night of Chanukah? <br> a) Shammai <br> b) Abraham <br> c) Hillel <br> d) Moses <br> Answer: c",
-  "What rabbi thought we should light 8 candles on the first night of Chanukah and light 1 less candle each night until we light only 1 candle on the last night? <br> a) Hillel <br> b) Moses <br> c) Abraham <br> d) Shammai <br> Answer: d",
-  "What blessings do we say over the candles? <br> a) l’hadlik ner shel yom tov <br> b) hamotzi lechem min ha’aretz and borei pri hagafen <br> c) la’asok b’divrei Torah <br> d) l’hadlik ner shel Chanukah, sheasah nisim, and on the first night, shechechiyanu <br> Answer: d"
+  {question: "Why are dreidels traditional for Chanukah? <br> a) It's fun to spin them  <br> b) Jews played with tops to make the Greek soldiers <br> think they weren't studying Torah<br <br> c) They get you chocolate or money! <br> d) Without them, menorahs would be lonely : (",
+  answer:"Answer: b"},
+  {question: "What is a dreidel? <br> a) a UFO <br> b) a kind of dog <br> c) something delicious in my grandma's soup <br> d) it's a top that has four Hebrew letters on it", answer: "Answer: d"},
+  {question: "What was the miracle of Chanukah? <br> a) the oil lasted for 8 days instead of 1 <br> b) the sea parted in time for us to cross <br> c) the well followed Miriam everywhere she went <br> d) the bush was burning but was not consumed", answer: "Answer: a"},
+  {question: "Why do we eat fried foods during Chanukah? <br> a) they taste good <br> b) we like foods that are crispy <br> c) fried oreos are the new gelt <br> d) we remember the miracle of the oil lasting for 8 days", answer: "Answer: d"},
+  {question: "Thought Question (All answers are correct) <br> Besides latkes, what fried food you would like to make traditional for at least one night of Chanukah? Why?", answer: null},
+  {question: "Who was Mattathias? <br> a) the inventor of the first dreidel <br> b) the guy in the Temple who lit the menorah <br> c) the father of Judah the Maccabee <br> d) the person who thought we should light all 8 candles on the first night of Chanukah", answer: "Answer: c"}
+  // {"How many sons did Mattathias have? <br> a) one <br> b) ten <br> c) none – he only had daughters <br> d) five": "Answer: d – 5: Yochanan, Shimon, Judah, Eliezer, and Yonatan",
+  // {"Who was the Syrian Greek king who oppressed the Jewish people and tried to put an end to Judaism? <br> a) King Kong <br> b) Antiochus <br> c) King Tut <br> d) Achashveirosh": "Answer: b"},
+  // {"What is something Jewish you could do during Chanukah to make the holiday extra fun or special? <br> a) watch a movie about a Jewish person or holiday <br> b) read a Jewish book or comic book <br> c) listen to Jewish music <br> d) all of the above and so much more": "Answer: d"},
+  // {"What do we call the candle that we use to light the other Chanukah candles? <br> a) we don’t call it anything because it has no ears to hear us <br> b) the lighter <br> c) the Shamash <br> d) the hottie": "Answer: c"},
+  // {"What rabbi first decided that we should light 1 candle on the first night of Chanukah adding a candle each night until we light 8 on the last night of Chanukah? <br> a) Shammai <br> b) Abraham <br> c) Hillel <br> d) Moses": "Answer: c"},
+  // {"What rabbi thought we should light 8 candles on the first night of Chanukah and light 1 less candle each night until we light only 1 candle on the last night? <br> a) Hillel <br> b) Moses <br> c) Abraham <br> d) Shammai": "Answer: d"},
+  // {"What blessings do we say over the candles? <br> a) l’hadlik ner shel yom tov <br> b) hamotzi lechem min ha’aretz and borei pri hagafen <br> c) la’asok b’divrei Torah <br> d) l’hadlik ner shel Chanukah, sheasah nisim, and on the first night, shechechiyanu": " Answer: d"}
 // On Friday night during Chanukah, which candles do
 // we light first, Shabbat or Chanukah? <br> Answer: We light Chanukah candles first because it is
 // traditional to only light candles to start Shabbat and
