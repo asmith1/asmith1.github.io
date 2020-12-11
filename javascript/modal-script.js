@@ -5,7 +5,7 @@ var modal = document.getElementById("card");
 var drawCardButton = document.getElementById("draw-card-button");
 
 var showAnswerButton = document.getElementById("show-answer-button");
-
+var cardText = document.getElementById("card-text");
 var cardAnswer = document.getElementById("card-answer");
 
 // Get the <span> element that closes the modal
@@ -16,8 +16,15 @@ var card = {};
 
 // When the user clicks on the button, open the modal
 drawCardButton.onclick = function() {
+  cardAnswer.innerHTML = null;
+  showAnswerButton.innerHTML = "Show answer";
   card =  cards[Math.floor(Math.random() * cards.length)];
-  document.getElementById("card-text").innerHTML = card.question;
+  if (card.answer == null) {
+    showAnswerButton.style.display = "none";
+  } else {
+    showAnswerButton.style.display = "block";
+  }
+  cardText.innerHTML = card.question;
   modal.style.display = "block";
 }
 
