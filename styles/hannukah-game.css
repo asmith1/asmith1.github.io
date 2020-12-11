@@ -58,6 +58,8 @@ img {
   height: 48%;
   width: 20%;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* The Close Button */
@@ -79,4 +81,17 @@ img {
   padding-top: 20%;
   height: 400px;
   width: 900px;
+}
+
+#show-answer-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 7%;
+  border-radius: 5px;
 }
