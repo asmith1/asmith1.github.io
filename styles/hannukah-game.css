@@ -95,3 +95,13 @@ img {
   margin: 7%;
   border-radius: 5px;
 }
+
+/* .page-container {
+  display: flex;
+  flex-direction: column;
+} */
+#copyright-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
