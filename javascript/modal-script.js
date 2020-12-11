@@ -32,10 +32,11 @@ drawCardButton.onclick = function() {
 showAnswerButton.onclick = function() {
   if (cardAnswer.innerHTML == "") {
     cardAnswer.innerHTML = card.answer;
-    showAnswerButton.innerHTML = "Hide answer";
+    showAnswerButton.innerHTML = "Close";
   } else {
     cardAnswer.innerHTML = null;
-    showAnswerButton.innerHTML = "Show answer";
+    modal.style.display = "none";
+    // showAnswerButton.innerHTML = "Show answer";
   }
 }
 
@@ -146,7 +147,7 @@ var cards = [
 			"answer": "Answer: a"
 		},
 		{
-			"question": "In the song, “I Have a Little Dreidel”, what is the dreidel made of? <br> <br> a) cheese <br> b) legos <br> c) clay <br> d) chocolate",
+			"question": "In the song, \"I Have a Little Dreidel\", what is the dreidel made of? <br> <br> a) cheese <br> b) legos <br> c) clay <br> d) chocolate",
 			"answer": "Answer: c"
 		}, {
 			"question": "When playing dreidel, what is the best letter to land on? <br> <br> a) Nun (&#1504) <br> b) Gimel (&#1490) <br> c) Hey (&#1492) <br> d) Shin (&#1513) ",
