@@ -1,5 +1,6 @@
 body {
  background-color: #b987e6;
+ size: 14em;
 }
 
 img {
@@ -85,7 +86,7 @@ img {
 }
 
 #show-answer-button {
-  background-color: #33adff; /*#4CAF50; /* Green */ */
+  background-color: #33adff;
   border: none;
   color: white;
   padding: 15px 32px;
