@@ -21,7 +21,7 @@ img {
 
 .game-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 #draw-card-button {
@@ -31,8 +31,9 @@ img {
   height: 18%;
   width: 7%;
   position: absolute;
-  margin-left: 82%;
-  margin-top: 4%;
+  /* margin-left: 82%; */
+  margin-top: 2%;
+  float:right;
 }
 
 /* The Modal (background) */
