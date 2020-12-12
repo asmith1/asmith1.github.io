@@ -1,6 +1,6 @@
 body {
  background-color: #b987e6;
- font-size: 1.2em;
+ font-size: 1.3em;
 }
 
 img {
@@ -35,7 +35,7 @@ img {
   /* margin-left: 82%; */
   margin-top: 2%;
   float:right;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 /* The Modal (background) */
@@ -58,7 +58,7 @@ img {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  height: 50%;
+  height: 55%;
   width: 22%;
   border-radius: 5px;
   display: flex;
@@ -94,7 +94,8 @@ img {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 1.3em;
   margin: 7%;
   border-radius: 5px;
 }

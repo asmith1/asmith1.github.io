@@ -162,7 +162,7 @@ var cards = [
 		},
 		{
 			"question": "What does Chanukah mean? <br> <br> a) present <br> b) holiday <br> c) dedication <br> d) light ",
-			"answer": "Answer: c - Chanukah literally means dedication — This stands for our re-dedication of our Holy Temple."
+			"answer": "Answer: c - Chanukah literally means dedication - This stands for our re-dedication of our Holy Temple."
 		},
 		{
 			"question": "What does the word Maccabee mean? <br> <br> a) coconut cookie <br> b) soldier <br> c) sport <br> d) hammer ",
