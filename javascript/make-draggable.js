@@ -6,6 +6,9 @@ dragElement(document.getElementById("purple-piece"));
 dragElement(document.getElementById("red-piece"));
 dragElement(document.getElementById("white-piece"));
 dragElement(document.getElementById("yellow-piece"));
+dragElement(document.getElementById("pink-piece"));
+dragElement(document.getElementById("teal-piece"));
+dragElement(document.getElementById("orange-piece"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
