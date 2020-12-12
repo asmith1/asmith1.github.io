@@ -16,27 +16,26 @@ var card = {};
 
 // When the user clicks on the button, open the modal
 drawCardButton.onclick = function() {
-  // console.log(cards)
   cardAnswer.innerHTML = null;
   showAnswerButton.innerHTML = "Show answer";
   card =  cards[Math.floor(Math.random() * cards.length)];
   if (card.answer == null) {
-    showAnswerButton.style.display = "none";
+    showAnswerButton.innerHTML = "Close";
+
   } else {
-    showAnswerButton.style.display = "block";
+    showAnswerButton.innerHTML = "Show answer";
   }
   cardText.innerHTML = card.question;
   modal.style.display = "block";
 }
 
 showAnswerButton.onclick = function() {
-  if (cardAnswer.innerHTML == "") {
+  if (cardAnswer.innerHTML == "" && card.answer != null) {
     cardAnswer.innerHTML = card.answer;
     showAnswerButton.innerHTML = "Close";
   } else {
     cardAnswer.innerHTML = null;
     modal.style.display = "none";
-    // showAnswerButton.innerHTML = "Show answer";
   }
 }
 
