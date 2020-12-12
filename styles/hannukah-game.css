@@ -1,6 +1,5 @@
 body {
  background-color: #b987e6;
- font-size: 1.3em;
 }
 
 img {
@@ -14,7 +13,8 @@ img {
   justify-content: center;
 }
 
-#blue-piece, #gray-piece, #green-piece, #purple-piece, #red-piece, #white-piece, #yellow-piece {
+#blue-piece, #gray-piece, #green-piece, #purple-piece, #red-piece, #white-piece,
+#yellow-piece, #teal-piece, #pink-piece, #orange-piece {
   position: absolute;
   height: 3.5%;
   width: 3.5%;
@@ -32,10 +32,9 @@ img {
   height: 18%;
   width: 7%;
   position: absolute;
-  /* margin-left: 82%; */
   margin-top: 2%;
   float:right;
-  font-size: 1.3em;
+  font-size: 22px;
 }
 
 /* The Modal (background) */
@@ -58,11 +57,12 @@ img {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  height: 55%;
-  width: 22%;
+  height: 60%;
+  width: 25%;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  font-size: 22px;
 }
 
 /* The Close Button */
@@ -94,8 +94,7 @@ img {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  /* font-size: 16px; */
-  font-size: 1.3em;
+  font-size: 22px;
   margin: 7%;
   border-radius: 5px;
 }
