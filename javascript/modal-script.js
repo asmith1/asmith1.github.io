@@ -12,13 +12,13 @@ var cardAnswer = document.getElementById("card-answer");
 var span = document.getElementsByClassName("close")[0];
 
 var card = {};
-
+var deck2 = [];
 
 // When the user clicks on the button, open the modal
 drawCardButton.onclick = function() {
   cardAnswer.innerHTML = null;
   showAnswerButton.innerHTML = "Show answer";
-  card =  cards[Math.floor(Math.random() * cards.length)];
+  card = drawCard();
   if (card.answer == null) {
     showAnswerButton.innerHTML = "Close";
 
@@ -51,7 +51,24 @@ window.onclick = function(event) {
   }
 }
 
-var cards = [
+function drawCard() {
+  var card =  deck1[Math.floor(Math.random() * deck1.length)];
+  // remove card from the deck1
+  const index = deck1.indexOf(card);
+  if (index > -1) {
+    deck1.splice(index, 1);
+  }
+  // add card to deck2
+  deck2.push(card)
+
+  if (deck1.length == 0) {
+    console.log("went through entire deck")
+    deck1 = deck2;
+  }
+  return card;
+}
+
+var deck1 = [
     {
 			"question": "Why are dreidels traditional for Chanukah? <br> <br> a) It's fun to spin them  <br> b) Jews played with tops to make the Greek soldiers <br> think they weren't studying Torah<br <br> c) They get you chocolate or money! <br> d) Without them, menorahs would be lonely : (",
 			"answer": "Answer: b"
@@ -199,7 +216,3 @@ var cards = [
 			"question": "Thought question (All answers are correct) <br> <br> Giving extra tzedakah is a tradition of Chanukah. To which organization would you like to give extra tzedakah, and why?"
 		}
 ];
-
-
-
-var card =  cards[Math.floor(Math.random() * cards.length)];
