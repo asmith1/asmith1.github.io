@@ -1,0 +1,7 @@
+#portfolio-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
