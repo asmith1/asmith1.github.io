@@ -3,7 +3,7 @@ body {
 }
 
 img {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   width: auto\9; /* ie8 */
 }
