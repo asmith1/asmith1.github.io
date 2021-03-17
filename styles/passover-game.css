@@ -26,15 +26,15 @@ img {
 }
 
 #draw-card-button {
+  margin-right: 30%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
-  height: 18%;
-  width: 7%;
+  height: 12%;
+  width: 9%;
   position: absolute;
   margin-top: 2%;
-  float:right;
-  font-size: 22px;
+  font-size: 1.3em;
 }
 
 /* The Modal (background) */
