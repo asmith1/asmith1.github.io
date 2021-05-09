@@ -1,7 +1,19 @@
-#portfolio-links {
+.portfolio-link {
+  padding-bottom: 4%;
+}
+
+.center {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+#portfolio-page {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.portfolio-button {
+  height: 10rem; /* was 100 px */
+  width: 10rem;
 }
