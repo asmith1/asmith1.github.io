@@ -104,7 +104,6 @@ img {
 }
 
 #copyright-footer {
-  display: flex;
-  justify-content: center;
-  padding-top: 2%;
+  padding: 1%;
+  text-align: center;
 }
