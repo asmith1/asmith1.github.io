@@ -58,6 +58,11 @@
   content: url(../content/smile.svg);
 }
 
+#portfolio-button:hover {
+  background-color: white;
+  content: url(../content/resume.svg);
+}
+
 body {
 	text-align: center;
 }
