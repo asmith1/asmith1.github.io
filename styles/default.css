@@ -51,6 +51,8 @@ h1 {
 #footer {
     color: #cfb7e5;
     padding-top: 5%;
+    font-size: 15px;
+    text-align: center;
 }
 
 #footer a:link {
