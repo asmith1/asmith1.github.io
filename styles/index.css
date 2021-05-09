@@ -66,3 +66,32 @@
 body {
 	text-align: center;
 }
+
+h2 {
+  font-size: 45px;
+}
+
+.portfolio-link {
+  padding-bottom: 4%;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#portfolio-page {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.portfolio-button {
+  height: 10rem; /* was 100 px */
+  width: 10rem;
+
+}
+
+.portfolio-button:hover {
+  opacity: 0.8;
+}
