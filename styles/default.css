@@ -121,3 +121,7 @@ a:link {
   font-weight: bold;
   text-decoration: none;
 }
+
+a:hover {
+  opacity: 0.8;
+}

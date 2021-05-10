@@ -78,12 +78,12 @@ h2 {
 .page-section {
   padding-top: 5%;
   padding-bottom: 5%;
+  color: white;
 }
 
 .portfolio-button {
   height: 10rem; /* was 100 px */
   width: 10rem;
-
 }
 
 .portfolio-button:hover {
