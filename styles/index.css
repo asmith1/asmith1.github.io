@@ -92,3 +92,12 @@ h2 {
 .portfolio-button:hover {
   opacity: 0.8;
 }
+
+.dog-lover {
+  background-color: var(--button-color);
+}
+
+.dancer {
+  background-color: var(--light-purple);
+  color: var(--background-color);
+}

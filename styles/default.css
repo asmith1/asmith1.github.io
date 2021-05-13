@@ -2,6 +2,7 @@
     --background-color: #2A1B38; /* dark violet */
     --text-color: #ffffff; /* white */
     --button-color: #D83F87; /*hot pink */
+    --light-purple: #cfb7e5 
 }
 
 body {
@@ -50,14 +51,14 @@ h1 {
 }
 
 #footer {
-    color: #cfb7e5;
+    color: var(--light-purple);
     padding-top: 5%;
     font-size: 15px;
     text-align: center;
 }
 
 #footer a:link {
-    color: #cfb7e5;
+    color: var(--light-purple);
 }
 
 #homepage {
