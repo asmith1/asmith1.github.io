@@ -98,11 +98,6 @@ h2 {
   opacity: 0.8;
 }
 
-#dog-lover {
+.pink-background {
   background-color: var(--button-color);
-}
-
-#dancer {
-  background-color: var(--light-purple);
-  color: var(--background-color);
 }
