@@ -93,11 +93,11 @@ h2 {
   opacity: 0.8;
 }
 
-.dog-lover {
+#dog-lover {
   background-color: var(--button-color);
 }
 
-.dancer {
+#dancer {
   background-color: var(--light-purple);
   color: var(--background-color);
 }
