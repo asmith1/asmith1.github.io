@@ -15,7 +15,8 @@ body {
 p {
     font-family: 'Roboto', serif;
     opacity: 1;
-    text-indent: 50px;
+    /* text-indent: 50px; */
+    text-indent: 0;
 }
 
 h1 {
