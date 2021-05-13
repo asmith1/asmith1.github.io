@@ -118,15 +118,19 @@ h1 {
   justify-content: center;
 }
 
+a {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
 a:link {
   font-weight: bold;
   text-decoration: none;
-  color: white;
 }
 
-a:visited {
+/* a:visited {
   color: white;
-}
+} */
 
 a:hover {
   opacity: 0.8;
