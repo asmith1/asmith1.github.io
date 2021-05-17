@@ -101,3 +101,8 @@ h2 {
 .pink-background {
   background-color: var(--button-color);
 }
+
+#icons {
+  display: flex;
+  align-items: center;
+}
