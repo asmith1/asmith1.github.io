@@ -2,7 +2,7 @@
     --background-color: #2A1B38; /* dark violet */
     --text-color: #ffffff; /* white */
     --button-color: #D83F87; /*hot pink */
-    --light-purple: #cfb7e5 
+    --light-purple: #cfb7e5
 }
 
 body {
@@ -121,7 +121,7 @@ h1 {
 
 a {
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a:link {
