@@ -79,7 +79,7 @@ h2 {
 
 #icons {
   display: flex;
-  align-items: space-around;
+  align-items: space-between;
   padding-left: 20%;
   padding-right: 20%;
   /* flex-grow: 2; */
