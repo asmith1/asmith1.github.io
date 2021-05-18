@@ -93,7 +93,7 @@ h1 {
 		flex-direction: column;
 	}
   .col-2 {
-    width: 100%;
+    width: inherit;
   }
 }
 

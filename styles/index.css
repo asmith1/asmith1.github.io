@@ -43,31 +43,6 @@
   }
 }
 
-#github-button:hover {
-  background-color: white;
-  content: url(../content/github-logo.svg); /* file loc relative to css file */
-}
-
-#linkedin-button:hover {
-  background-color: white;
-  content: url(../content/linkedin-logo.svg); /* file loc relative to css file */
-}
-
-#resume-button:hover {
-  background-color: white;
-  content: url(../content/cv-logo.svg);
-}
-
-#bio-button:hover {
-  background-color: white;
-  content: url(../content/smile.svg);
-}
-
-#portfolio-button:hover {
-  background-color: white;
-  content: url(../content/resume.svg);
-}
-
 body {
 	text-align: center;
 }
