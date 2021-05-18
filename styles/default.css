@@ -16,7 +16,6 @@ body {
 p {
     font-family: 'Roboto', serif;
     opacity: 1;
-    /* text-indent: 50px; */
     text-indent: 0;
 }
 
@@ -42,7 +41,6 @@ h1 {
     text-decoration: none;
     font-size: 1.5rem; /* was 16px */
     margin: 5px;
-    /* padding: 0.2rem; */
 }
 
 #contactform {
@@ -95,12 +93,6 @@ h1 {
 		flex-direction: column;
 	}
 }
-
-/* @media (min-width: 701px) {
-	#bio-button {
-		display: none;
-	}
-} */
 
 #back-button-div {
 	display: flex;
