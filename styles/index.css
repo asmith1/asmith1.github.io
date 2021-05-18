@@ -8,45 +8,6 @@
   justify-content: center;
 }
 
-@media (min-width: 501px) {
-  #pro-pic {
-    padding: 20px;
-    width: 350px;
-    max-width: 100%;
-    max-height: 350px;
-    border-radius: 5%;
-  }
-  #buttons {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 10px;
-  }
-}
-
-@media (max-width: 500px) {
-  #buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .button {
-    height: 15rem;
-    width: 15rem;
-  }
-  #pro-pic {
-    height: 15rem;
-    width: 15rem;
-    border-radius: 50%;
-  }
-  #icons {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-
 body {
 	text-align: center;
 }
@@ -86,12 +47,45 @@ h2 {
   justify-content: space-around;
   padding-left: 27%;
   padding-right: 27%;
-  /* flex-grow: 2; */
-  /* width: 75%; */
   padding-bottom: 5%;
 }
 
-/* .icon {
-  padding-left: 5%;
-  padding-right: 5%;
-} */
+
+@media (min-width: 501px) {
+  #pro-pic {
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+    max-height: 350px;
+    border-radius: 5%;
+  }
+  #buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  #buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .button {
+    height: 15rem;
+    width: 15rem;
+  }
+  #pro-pic {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+  }
+  #icons {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
