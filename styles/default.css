@@ -92,6 +92,9 @@ h1 {
 	#homepage {
 		flex-direction: column;
 	}
+  .col-2 {
+    width: 100%;
+  }
 }
 
 #back-button-div {

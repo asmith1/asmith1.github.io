@@ -107,7 +107,8 @@ h2 {
   align-items: space-around;
   padding-left: 15%;
   padding-right: 15%;
-  flex-grow: 2;
+  /* flex-grow: 2; */
+  width: 75%;
 }
 
 .icon {
