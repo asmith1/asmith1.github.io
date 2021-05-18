@@ -9,7 +9,7 @@
 }
 
 @media (min-width: 501px) {
-  img {
+  #pro-pic {
     padding: 20px;
     width: 350px;
     max-width: 100%;
@@ -36,7 +36,7 @@
     height: 15rem;
     width: 15rem;
   }
-  img {
+  #pro-pic {
     height: 15rem;
     width: 15rem;
     border-radius: 50%;
