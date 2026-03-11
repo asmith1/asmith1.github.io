@@ -70,8 +70,24 @@
       </div>
 
       <div class="spinner">
-        <iframe src="https://wheelofnames.com/5kc-yfm" width=100% height=100% frameborder="0">
-        </iframe>
+        <div class="wheel-container">
+          <div id="wheel" class="wheel">
+            <div class="wheel-section" data-value="1">
+              <span class="wheel-text">Echad (1)</span>
+            </div>
+            <div class="wheel-section" data-value="2">
+              <span class="wheel-text">Shtayim (2)</span>
+            </div>
+            <div class="wheel-section" data-value="3">
+              <span class="wheel-text">Shalosh (3)</span>
+            </div>
+            <div class="wheel-section" data-value="4">
+              <span class="wheel-text">Arba (4)</span>
+            </div>
+          </div>
+          <div class="wheel-pointer"></div>
+          <button id="spin-button" class="spin-button">Spin</button>
+        </div>
       </div>
 
       <div class="game-board">
@@ -102,5 +118,6 @@
   <script src="../javascript/make-draggable.js"></script>
   <script src="../javascript/passover-deck.js"></script>
   <script src="../javascript/modal-script.js"></script>
+  <script src="../javascript/spinning-wheel.js"></script>
 
 </html>
