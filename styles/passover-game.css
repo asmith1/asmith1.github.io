@@ -196,8 +196,9 @@ img {
   justify-content: center;
   color: white;
   font-weight: bold;
-  font-size: clamp(16px, 4vw, 24px);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: clamp(16px, 4vw, 22px);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  font-family: 'Comic Sans MS', 'Marker Felt', 'Arial Rounded MT Bold', sans-serif;
   /* Create a 90-degree pie slice using clip-path */
   clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%);
 }
