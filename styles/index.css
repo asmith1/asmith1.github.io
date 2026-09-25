@@ -200,6 +200,11 @@ h2 {
   object-fit: cover;
 }
 
+.company-logos img.wide {
+  width: auto;
+  padding: 12px 16px;
+}
+
 .company-logos figcaption {
   font-size: 15px;
 }
