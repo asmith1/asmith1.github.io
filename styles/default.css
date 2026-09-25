@@ -138,22 +138,22 @@ a:hover {
    Pink on the dark purple background, dark purple on the pink sections. */
 p a:link,
 p a:visited {
-  --marker: rgba(216, 63, 135, 0.8);
+  --marker: rgba(216, 63, 135, 0.55);
   font-weight: normal;
   padding: 0 2px;
-  background: linear-gradient(transparent 52%, var(--marker) 52%, var(--marker) 94%, transparent 94%);
+  background: linear-gradient(transparent 58%, var(--marker) 58%, var(--marker) 92%, transparent 92%);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
 
 .pink-background p a:link,
 .pink-background p a:visited {
-  --marker: rgba(42, 27, 56, 0.55);
+  --marker: rgba(42, 27, 56, 0.4);
 }
 
 p a:hover {
   opacity: 1;
-  background: linear-gradient(transparent 6%, var(--marker) 6%, var(--marker) 94%, transparent 94%);
+  background: linear-gradient(transparent 8%, var(--marker) 8%, var(--marker) 92%, transparent 92%);
 }
 
 /* The intro's links jump down to each section, so they get a small arrow instead */
