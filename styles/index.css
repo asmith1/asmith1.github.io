@@ -266,3 +266,8 @@ h2 {
   background-color: #1843a6;
   border-color: #1843a6;
 }
+
+/* B'nai Jeshurun's logo is white, so its tile uses the logo's teal instead of white */
+#bnai-jeshurun-logo {
+  background-color: #00a09b;
+}
