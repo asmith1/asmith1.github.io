@@ -134,6 +134,45 @@ a:hover {
   opacity: 0.8;
 }
 
+/* Text links: a highlighter-marker swipe behind the lower half of the words.
+   Pink on the dark purple background, dark purple on the pink sections. */
+p a:link,
+p a:visited {
+  --marker: rgba(216, 63, 135, 0.8);
+  font-weight: normal;
+  padding: 0 2px;
+  background: linear-gradient(transparent 52%, var(--marker) 52%, var(--marker) 94%, transparent 94%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.pink-background p a:link,
+.pink-background p a:visited {
+  --marker: rgba(42, 27, 56, 0.55);
+}
+
+p a:hover {
+  opacity: 1;
+  background: linear-gradient(transparent 6%, var(--marker) 6%, var(--marker) 94%, transparent 94%);
+}
+
+/* The intro's links jump down to each section, so they get a small arrow instead */
+.col-2 p a:link,
+.col-2 p a:visited {
+  background: none;
+  padding: 0;
+}
+
+.col-2 p a::after {
+  content: " \2193";
+  font-size: 0.75em;
+  opacity: 0.85;
+}
+
+.col-2 p a:hover {
+  opacity: 0.8;
+}
+
 html {
     scroll-behavior: smooth;
 }
