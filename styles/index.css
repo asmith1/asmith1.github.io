@@ -123,6 +123,20 @@ h2 {
   }
 }
 
+#learn-mobo-logo {
+  align-self: center;
+  background-color: white;
+  border-radius: 16px;
+  padding: 16px 24px;
+  margin-bottom: 10px;
+}
+
+#learn-mobo-logo img {
+  display: block;
+  width: 240px;
+  max-width: 100%;
+}
+
 .photo-row {
   display: flex;
   flex-wrap: wrap;
