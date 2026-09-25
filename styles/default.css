@@ -9,23 +9,28 @@ body {
     background: var(--background-color);
     text-align: left;
     font-size: 15px;
-    font-family: 'Roboto', serif;
+    font-family: 'DM Sans', sans-serif;
     color: var(--text-color);
 }
 
 p {
-    font-family: 'Roboto', serif;
+    font-family: 'DM Sans', sans-serif;
     opacity: 1;
     text-indent: 0;
 }
 
 h1 {
     font-size: 60px;
-    font-family: 'Roboto', serif;
+    font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif;
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    font-weight: 500;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif;
+    font-weight: 800;
 }
 
 .button {
@@ -116,16 +121,55 @@ h1 {
 
 a {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 a:link {
   font-weight: bold;
   text-decoration: none;
-  font-style: oblique;
+  font-style: normal;
 }
 
 a:hover {
+  opacity: 0.8;
+}
+
+/* Text links: a highlighter-marker swipe behind the lower half of the words.
+   Pink on the dark purple background, dark purple on the pink sections. */
+p a:link,
+p a:visited {
+  --marker: rgba(216, 63, 135, 0.6);
+  font-weight: normal;
+  padding: 0 2px;
+  background: linear-gradient(transparent 58%, var(--marker) 58%, var(--marker) 92%, transparent 92%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.pink-background p a:link,
+.pink-background p a:visited {
+  --marker: rgba(42, 27, 56, 0.45);
+}
+
+p a:hover {
+  opacity: 1;
+  background: linear-gradient(transparent 8%, var(--marker) 8%, var(--marker) 92%, transparent 92%);
+}
+
+/* The intro's links jump down to each section, so they get a small arrow instead */
+.col-2 p a:link,
+.col-2 p a:visited {
+  background: none;
+  padding: 0;
+}
+
+.col-2 p a::after {
+  content: " \2193";
+  font-size: 0.75em;
+  opacity: 0.85;
+}
+
+.col-2 p a:hover {
   opacity: 0.8;
 }
 
