@@ -89,3 +89,25 @@ h2 {
     padding-right: 10%;
   }
 }
+
+.photo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.photo-row img {
+  height: 300px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  .photo-row img {
+    height: auto;
+    width: 100%;
+  }
+}
