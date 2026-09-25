@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<meta charset="utf-8">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143795361-1"></script>
 	<script>
@@ -24,10 +25,53 @@
 			<div class=center>
 				<p> Virtual board games I made for Jewish education via distanced learning (Desktop only) </p>
 			</div>
-			<div class="center">
-				<a href="../hannukah-game/" class="portfolio-button button"> Hannukah Game </a>
-				<a href="../passover-game/" class="portfolio-button button"> Passover Game </a>
-				<a href="../shema-game/" class="portfolio-button button"> Shema Game </a>
+			<div class="center game-buttons">
+				<a href="../hannukah-game/" class="portfolio-button button game-button" id="hannukah-button">
+					<!-- Menorah: eight candles plus the taller shamash in the middle -->
+					<svg class="game-icon" viewBox="0 0 48 44" aria-hidden="true">
+						<g fill="none" stroke="#ffc93c" stroke-width="2.4" stroke-linecap="round">
+							<path d="M4 22 C4 34 44 34 44 22" />
+							<path d="M9 22 C9 31 39 31 39 22" />
+							<path d="M14 22 C14 28 34 28 34 22" />
+							<path d="M19 22 C19 25 29 25 29 22" />
+							<path d="M24 15 V40 M16 40 H32" />
+						</g>
+						<g fill="#ffe8a3">
+							<rect x="2.8" y="14" width="2.4" height="8" /><rect x="7.8" y="14" width="2.4" height="8" />
+							<rect x="12.8" y="14" width="2.4" height="8" /><rect x="17.8" y="14" width="2.4" height="8" />
+							<rect x="22.8" y="8" width="2.4" height="8" />
+							<rect x="27.8" y="14" width="2.4" height="8" /><rect x="32.8" y="14" width="2.4" height="8" />
+							<rect x="37.8" y="14" width="2.4" height="8" /><rect x="42.8" y="14" width="2.4" height="8" />
+						</g>
+						<g fill="#ff9f1c">
+							<ellipse cx="4" cy="10.5" rx="1.6" ry="2.6" /><ellipse cx="9" cy="10.5" rx="1.6" ry="2.6" />
+							<ellipse cx="14" cy="10.5" rx="1.6" ry="2.6" /><ellipse cx="19" cy="10.5" rx="1.6" ry="2.6" />
+							<ellipse cx="24" cy="4.5" rx="1.6" ry="2.6" />
+							<ellipse cx="29" cy="10.5" rx="1.6" ry="2.6" /><ellipse cx="34" cy="10.5" rx="1.6" ry="2.6" />
+							<ellipse cx="39" cy="10.5" rx="1.6" ry="2.6" /><ellipse cx="44" cy="10.5" rx="1.6" ry="2.6" />
+						</g>
+					</svg>
+					Hannukah Game
+				</a>
+				<a href="../passover-game/" class="portfolio-button button game-button" id="passover-button">
+					<!-- Matzah: a cracker with rows of perforations and a few toasted spots -->
+					<svg class="game-icon" viewBox="0 0 48 44" aria-hidden="true">
+						<rect x="6" y="6" width="36" height="32" rx="3" fill="#f6e3b4" stroke="#a8671f" stroke-width="2" />
+						<g stroke="#c9914a" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="0.1 4.4">
+							<path d="M11 13 H38 M11 19 H38 M11 25 H38 M11 31 H38" />
+						</g>
+						<g fill="#c07a2c" opacity="0.55">
+							<ellipse cx="16" cy="16" rx="3" ry="1.6" />
+							<ellipse cx="32" cy="28" rx="3.5" ry="1.8" />
+							<ellipse cx="29" cy="11" rx="2" ry="1.2" />
+						</g>
+					</svg>
+					Passover Game
+				</a>
+				<a href="../shema-game/" class="portfolio-button button game-button" id="shema-button">
+					<span class="game-icon hebrew" lang="he" aria-hidden="true">שמע</span>
+					Shema Game
+				</a>
 			</div>
 		</div>
 	</div>

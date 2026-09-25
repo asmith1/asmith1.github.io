@@ -22,3 +22,64 @@
 .portfolio-button:hover {
   opacity: 0.8;
 }
+
+/* Game buttons: each one takes its game's colors and a matching icon */
+.game-buttons {
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.game-button {
+  flex-direction: column;
+  gap: 8px;
+  height: 11rem;
+  width: 11rem;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  border: 6px solid;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease;
+}
+
+.game-button:hover {
+  opacity: 1;
+  transform: translateY(-4px) scale(1.04);
+}
+
+.game-icon {
+  flex-shrink: 0;
+  width: 64px;
+  height: 58px;
+}
+
+.game-icon.hebrew {
+  height: auto;
+  width: auto;
+  font-family: 'Times New Roman', serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* Hanukkah: the board's purple with a gold menorah */
+#hannukah-button {
+  background-color: #7b4fc4;
+  border-color: #ffc93c;
+}
+
+/* Passover: the desert orange with the Red Sea's blue around it */
+#passover-button {
+  background-color: #d9731a;
+  border-color: #4aa3df;
+}
+
+/* Shema: the stained glass blues */
+#shema-button {
+  background-color: #1843a6;
+  border-color: #5fb6ff;
+}
