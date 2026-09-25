@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143795361-1"></script>
+    <script>
+    	window.dataLayer = window.dataLayer || [];
+    	function gtag(){dataLayer.push(arguments);}
+    	gtag('js', new Date());
+    	gtag('config', 'UA-143795361-1');
+  	</script>
+    <title>Shema Game</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  	<link rel="stylesheet" href="../styles/shema-game.css" />
+  </head>
+
+  <body>
+
+    <!-- Game piece shape, filled with each piece's color -->
+    <svg width="0" height="0" style="position: absolute">
+      <symbol id="pawn" viewBox="0 0 40 50">
+        <path d="M14 22 H26 L31 41 H9 Z" fill="currentColor" stroke="#2b2b2b" stroke-width="2" stroke-linejoin="round" />
+        <rect x="5" y="39" width="30" height="8" rx="4" fill="currentColor" stroke="#2b2b2b" stroke-width="2" />
+        <circle cx="20" cy="13" r="9" fill="currentColor" stroke="#2b2b2b" stroke-width="2" />
+        <ellipse cx="17" cy="10" rx="3.5" ry="2.5" fill="white" opacity="0.7" />
+      </symbol>
+    </svg>
+
+    <div class="game-container">
+
+      <div id="pieces">
+        <div id="blue-piece">
+          <svg class="piece"><use href="#pawn" /></svg>
+        </div>
+        <div id="gray-piece">
+          <svg class="piece"><use href="#pawn" /></svg>
+        </div>
+        <div id="green-piece">
+          <svg class="piece"><use href="#pawn" /></svg>
+        </div>
+        <div id="purple-piece">
+          <svg class="piece"><use href="#pawn" /></svg>
+        </div>
+        <div id="red-piece">
+          <svg class="piece"><use href="#pawn" /></svg>
+        </div>
+        <div id="white-piece">
+          <svg class="piece"><use href="#pawn" /></svg>
+        </div>
+        <div id="yellow-piece">
+          <svg class="piece"><use href="#pawn" /></svg>
+        </div>
+        <div id="teal-piece">
+          <svg class="piece"><use href="#pawn" /></svg>
+        </div>
+        <div id="pink-piece">
+          <svg class="piece"><use href="#pawn" /></svg>
+        </div>
+        <div id="orange-piece">
+          <svg class="piece"><use href="#pawn" /></svg>
+        </div>
+      </div>
+
+      <div class="spinner">
+        <div class="wheel-container">
+          <div id="wheel" class="wheel">
+            <div class="wheel-section" data-value="1">
+              <span class="wheel-text">Echad (1)</span>
+            </div>
+            <div class="wheel-section" data-value="2">
+              <span class="wheel-text">Shtayim (2)</span>
+            </div>
+          </div>
+          <div class="wheel-pointer"></div>
+          <button id="spin-button" class="spin-button">Spin</button>
+        </div>
+      </div>
+
+      <div class="game-board">
+        <div class="board-crop">
+          <img src="2026shemaandblessingsgame_ejb.png" alt="Shema game board" />
+        </div>
+      </div>
+
+    </div>
+    <div id="copyright-footer">
+      Website created by <a href="../">Ashley Smith</a> - September 2026
+    </div>
+
+  </body>
+
+  <script src="../javascript/make-draggable.js"></script>
+  <script src="../javascript/spinning-wheel.js"></script>
+
+</html>

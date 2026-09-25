@@ -1,0 +1,256 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #1843a6; /* matches the board's dark blue frame */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.game-container {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  min-width: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.game-board {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Shows only the stained-glass part of the board image (2550x1650), cropping off
+   its dark blue frame, which is x 532-2474 and y 76-1572. The crop is as tall as
+   the screen allows and sits on the right, leaving room for pieces and spinner. */
+.board-crop {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1942 / 1496;
+  height: min(100vh, 100vw * 1496 / 1942);
+}
+
+.board-crop img {
+  position: absolute;
+  max-width: none;
+  width: calc(100% * 2550 / 1942);
+  left: calc(-100% * 532 / 1942);
+  top: calc(-100% * 76 / 1496);
+}
+
+#pieces {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 350px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#pieces > * {
+  pointer-events: auto;
+}
+
+#blue-piece, #gray-piece, #green-piece, #purple-piece, #red-piece, #white-piece,
+#yellow-piece, #teal-piece, #pink-piece, #orange-piece {
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+}
+
+/* Grid layout for initial positioning - 5 columns, 2 rows */
+#blue-piece { top: 0px; left: 0px; }
+#gray-piece { top: 0px; left: 50px; }
+#green-piece { top: 0px; left: 100px; }
+#purple-piece { top: 0px; left: 150px; }
+#red-piece { top: 0px; left: 200px; }
+#white-piece { top: 52px; left: 0px; }
+#yellow-piece { top: 52px; left: 50px; }
+#teal-piece { top: 52px; left: 100px; }
+#pink-piece { top: 52px; left: 150px; }
+#orange-piece { top: 52px; left: 200px; }
+
+/* Piece colors - the pawn shape in the page fills with each color */
+#blue-piece { color: #5aa9ff; }
+#gray-piece { color: #d3d8de; }
+#green-piece { color: #6fdc8c; }
+#purple-piece { color: #c49bff; }
+#red-piece { color: #ff7b7b; }
+#white-piece { color: #ffffff; }
+#yellow-piece { color: #ffe066; }
+#teal-piece { color: #4fe3d6; }
+#pink-piece { color: #ff9ad5; }
+#orange-piece { color: #ffb366; }
+
+.piece {
+  width: 34px;
+  height: 42px;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.45));
+  transition: transform 0.15s;
+}
+
+#pieces > div:hover .piece {
+  transform: scale(1.12);
+}
+
+#pieces > div:active {
+  cursor: grabbing;
+}
+
+.spinner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.wheel-container {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  height: 360px;
+  max-height: 80vh;
+  aspect-ratio: 1;
+  box-sizing: border-box;
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 8px solid #ffffff;
+  box-shadow: 0 0 0 3px #1b1b1b, 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 4s cubic-bezier(0.17, 0.67, 0.12, 0.99);
+  box-sizing: border-box;
+}
+
+/* Two halves: section 1 is the top half, section 2 is the same half rotated 180deg */
+.wheel-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: center center;
+  color: white;
+  font-weight: bold;
+  font-size: clamp(18px, 4vw, 26px);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.55);
+  font-family: 'Comic Sans MS', 'Marker Felt', 'Arial Rounded MT Bold', sans-serif;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+}
+
+.wheel-section:nth-child(1) {
+  background-color: #3cabf6;
+  transform: rotate(0deg);
+}
+
+.wheel-section:nth-child(2) {
+  background-color: #1171c9;
+  transform: rotate(180deg);
+}
+
+/* Dark line between the halves, like the lead lines in the stained glass */
+.wheel::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  transform: translateY(-50%);
+  background-color: #1b1b1b;
+}
+
+/* Centered in the top half, above the spin button */
+.wheel-text {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.wheel-pointer {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid #ffffff;
+  z-index: 10;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.spin-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(60px, 15vw, 80px);
+  height: clamp(60px, 15vw, 80px);
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 4px solid #1843a6;
+  color: #1843a6;
+  font-size: clamp(16px, 4vw, 20px);
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 20;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+.spin-button:hover {
+  background-color: #e3f1ff;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.spin-button:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.spin-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#copyright-footer {
+  padding: 1%;
+  text-align: center;
+}
