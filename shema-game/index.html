@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143795361-1"></script>
+    <script>
+    	window.dataLayer = window.dataLayer || [];
+    	function gtag(){dataLayer.push(arguments);}
+    	gtag('js', new Date());
+    	gtag('config', 'UA-143795361-1');
+  	</script>
+    <title>Shema Game</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  	<link rel="stylesheet" href="../styles/shema-game.css" />
+  </head>
+
+  <body>
+
+    <div class="game-container">
+
+      <div id="pieces">
+        <div id="blue-piece">
+          <img src="../content/hannukah-game/blue-piece.png" />
+        </div>
+        <div id="gray-piece">
+          <img src="../content/hannukah-game/gray-piece.png" />
+        </div>
+        <div id="green-piece">
+          <img src="../content/hannukah-game/green-piece.png" />
+        </div>
+        <div id="purple-piece">
+          <img src="../content/hannukah-game/purple-piece.png" />
+        </div>
+        <div id="red-piece">
+          <img src="../content/hannukah-game/red-piece.png" />
+        </div>
+        <div id="white-piece">
+          <img src="../content/hannukah-game/white-piece.png" />
+        </div>
+        <div id="yellow-piece">
+          <img src="../content/hannukah-game/yellow-piece.png" />
+        </div>
+        <div id="teal-piece">
+          <img src="../content/hannukah-game/teal-piece.png" />
+        </div>
+        <div id="pink-piece">
+          <img src="../content/hannukah-game/pink-piece.png" />
+        </div>
+        <div id="orange-piece">
+          <img src="../content/hannukah-game/orange-piece.png" />
+        </div>
+      </div>
+
+      <div class="spinner">
+        <div class="wheel-container">
+          <div id="wheel" class="wheel">
+            <div class="wheel-section" data-value="1">
+              <span class="wheel-text">Echad (1)</span>
+            </div>
+            <div class="wheel-section" data-value="2">
+              <span class="wheel-text">Shtayim (2)</span>
+            </div>
+          </div>
+          <div class="wheel-pointer"></div>
+          <button id="spin-button" class="spin-button">Spin</button>
+        </div>
+      </div>
+
+      <div class="game-board">
+        <img src="2026shemaandblessingsgame_ejb.png" alt="Shema game board" />
+      </div>
+
+    </div>
+    <div id="copyright-footer">
+      Website created by <a href="../">Ashley Smith</a> - September 2026
+    </div>
+
+  </body>
+
+  <script src="../javascript/make-draggable.js"></script>
+  <script src="../javascript/spinning-wheel.js"></script>
+
+</html>
