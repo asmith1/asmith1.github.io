@@ -4,7 +4,7 @@ html, body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: #9ad9ea;
+  background-color: #1843a6; /* matches the board's dark blue frame */
 }
 
 img {
@@ -25,23 +25,33 @@ img {
 
 .game-board {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: absolute;
   top: 0;
-  right: 0;
-  width: calc(100% - 400px);
+  left: 0;
+  width: 100%;
   height: 100vh;
   z-index: 0;
   pointer-events: none;
 }
 
-.game-board img {
-  max-width: 100%;
-  max-height: 100vh;
-  width: auto;
-  height: auto;
-  object-fit: contain;
+/* Shows only the stained-glass part of the board image (2550x1650), cropping off
+   its dark blue frame, which is x 532-2474 and y 76-1572. The crop is as tall as
+   the screen allows and sits on the right, leaving room for pieces and spinner. */
+.board-crop {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1942 / 1496;
+  height: min(100vh, 100vw * 1496 / 1942);
+}
+
+.board-crop img {
+  position: absolute;
+  max-width: none;
+  width: calc(100% * 2550 / 1942);
+  left: calc(-100% * 532 / 1942);
+  top: calc(-100% * 76 / 1496);
 }
 
 #pieces {
@@ -98,6 +108,7 @@ img {
   width: 100%;
   max-width: 400px;
   height: 400px;
+  z-index: 1;
   box-sizing: border-box;
 }
 
