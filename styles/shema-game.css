@@ -70,8 +70,8 @@ img {
 #blue-piece, #gray-piece, #green-piece, #purple-piece, #red-piece, #white-piece,
 #yellow-piece, #teal-piece, #pink-piece, #orange-piece {
   position: absolute;
-  height: 60px;
-  width: 60px;
+  height: 44px;
+  width: 44px;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -81,15 +81,15 @@ img {
 
 /* Grid layout for initial positioning - 5 columns, 2 rows */
 #blue-piece { top: 0px; left: 0px; }
-#gray-piece { top: 0px; left: 70px; }
-#green-piece { top: 0px; left: 140px; }
-#purple-piece { top: 0px; left: 210px; }
-#red-piece { top: 0px; left: 280px; }
-#white-piece { top: 70px; left: 0px; }
-#yellow-piece { top: 70px; left: 70px; }
-#teal-piece { top: 70px; left: 140px; }
-#pink-piece { top: 70px; left: 210px; }
-#orange-piece { top: 70px; left: 280px; }
+#gray-piece { top: 0px; left: 50px; }
+#green-piece { top: 0px; left: 100px; }
+#purple-piece { top: 0px; left: 150px; }
+#red-piece { top: 0px; left: 200px; }
+#white-piece { top: 52px; left: 0px; }
+#yellow-piece { top: 52px; left: 50px; }
+#teal-piece { top: 52px; left: 100px; }
+#pink-piece { top: 52px; left: 150px; }
+#orange-piece { top: 52px; left: 200px; }
 
 /* Piece colors - the pawn shape in the page fills with each color */
 #blue-piece { color: #5aa9ff; }
@@ -104,9 +104,9 @@ img {
 #orange-piece { color: #ffb366; }
 
 .piece {
-  width: 48px;
-  height: 60px;
-  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.45));
+  width: 34px;
+  height: 42px;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.45));
   transition: transform 0.15s;
 }
 
