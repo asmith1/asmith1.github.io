@@ -27,6 +27,39 @@ h2 {
   font-size: 22px;
   padding-left: 5%;
   padding-right: 5%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-section p {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+@media (min-width: 751px) {
+  #homepage {
+    min-height: 100vh;
+  }
+  #homepage .col-1 {
+    justify-content: center;
+  }
+  #homepage h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .page-section {
+    min-height: 0;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
 }
 
 .portfolio-button {
