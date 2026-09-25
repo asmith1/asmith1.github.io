@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&display=swap');
+
 :root {
     --background-color: #2A1B38; /* dark violet */
     --text-color: #ffffff; /* white */
@@ -21,11 +23,16 @@ p {
 
 h1 {
     font-size: 60px;
-    font-family: 'Roboto', serif;
+    font-family: 'Bricolage Grotesque', 'Roboto', sans-serif;
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    font-weight: 500;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'Bricolage Grotesque', 'Roboto', sans-serif;
+    font-weight: 800;
 }
 
 .button {

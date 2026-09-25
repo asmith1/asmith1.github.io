@@ -23,20 +23,6 @@
   opacity: 0.8;
 }
 
-/* Fredoka: a rounded, playful font to match the kids' board games */
-body, h1, p, a {
-  font-family: 'Fredoka', sans-serif;
-}
-
-h1 {
-  font-weight: 600;
-}
-
-a:link {
-  font-style: normal;
-  font-weight: 600;
-}
-
 #portfolio-page p {
   font-size: 22px;
   text-align: center;
@@ -78,6 +64,9 @@ a:link {
   padding: 14px;
   text-align: center;
   font-size: 1.6rem;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: 800;
   color: white;
 }
 
