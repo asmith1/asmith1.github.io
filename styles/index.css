@@ -275,3 +275,21 @@ h2 {
 #temple-sholom-logo {
   background-color: #cf6728;
 }
+
+/* Light sections: a soft lavender off-white with dark purple text */
+.light-background {
+  background-color: #f6eff8;
+  color: var(--background-color);
+}
+
+.light-background p a:link,
+.light-background p a:visited {
+  color: var(--background-color);
+  --marker: rgba(216, 63, 135, 0.35);
+}
+
+/* White logo tiles need a soft shadow to stand out on the light background */
+.light-background #learn-mobo-logo,
+.light-background .company-logos img {
+  box-shadow: 0 2px 10px rgba(42, 27, 56, 0.15);
+}
