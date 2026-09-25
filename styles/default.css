@@ -9,19 +9,19 @@ body {
     background: var(--background-color);
     text-align: left;
     font-size: 15px;
-    font-family: 'Roboto', serif;
+    font-family: 'DM Sans', sans-serif;
     color: var(--text-color);
 }
 
 p {
-    font-family: 'Roboto', serif;
+    font-family: 'DM Sans', sans-serif;
     opacity: 1;
     text-indent: 0;
 }
 
 h1 {
     font-size: 60px;
-    font-family: 'Bricolage Grotesque', 'Roboto', sans-serif;
+    font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif;
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Bricolage Grotesque', 'Roboto', sans-serif;
+    font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif;
     font-weight: 800;
 }
 
@@ -121,13 +121,13 @@ h2 {
 
 a {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 a:link {
   font-weight: bold;
   text-decoration: none;
-  font-style: oblique;
+  font-style: normal;
 }
 
 a:hover {
